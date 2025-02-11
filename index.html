@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>2. </title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUEGO DE PAREJAS</title>
+    <title>Juego de Memoria - Modo Extremo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <!-- Pantalla de contraseña -->
-    <div id="password-screen">
-        <h1>Introduce la contraseña para jugar</h1>
-        <input type="password" id="password" placeholder="Escribe la contraseña">
+    <div id="login-screen">
+        <h2>Ingresa la contraseña</h2>
+        <input type="password" id="password-input" placeholder="Contraseña">
         <button onclick="checkPassword()">Entrar</button>
-        <p id="error-message" class="hidden">Contraseña incorrecta. Intenta de nuevo.</p>
+        <p id="error-message" class="hidden">❌ Contraseña incorrecta</p>
     </div>
 
-    <!-- Contenedor del juego -->
     <div id="game-container" class="hidden">
-        <h1 id="title">🎄JUEGO DE PAREJAS 🎄</h1>
-        <div id="message"></div>
-        <div id="board"></div>
-        <button id="reset-button">Reiniciar</button>
+        <h1>Encuentra las parejas</h1>
+        <div id="game-board"></div>
+        <p id="win-message" class="hidden">🎉 ¡Ganaste! contraseña: <strong>BUEN0RR0</strong>. Para avanzar, en la presentación toca una de las monedas.</p>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
